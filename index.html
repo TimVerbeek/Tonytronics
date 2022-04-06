@@ -11,6 +11,29 @@
             $("main div").on('click', function(){
                 winkelkar +=1;
                 $('header span a').html(`Winkelmand (${winkelkar}) `)
+
+
+
+                $('input[name="price50"]').on('click', function (){
+        if($('input[name="price50"]:checked')){
+            $('.honderd').css({'display': 'none'})
+            $('.vijfhonderd').css({'display': 'none'})
+        }
+    })
+
+    $('input[name="price100"]').on('click', function (){
+        if($('input[name="price100"]:checked')){
+            $('.fifty').css({'display': 'none'})
+            $('.vijfhonderd').css({'display': 'none'})
+        }
+    })
+
+    $('input[name="price500"]').on('click', function (){
+        if($('input[name="price50"]:checked')){
+            $('.honderd').css({'display': 'none'})
+            $('.fifty').css({'display': 'none'})
+        }
+    })
             })
 })
         </script>
@@ -33,79 +56,79 @@
         <aside>
             <form>
                 <h4>Prijs</h4>
-                <input type="checkbox"> €0-€50<br>
-                <input type="checkbox"> €50-€100<br>
-                <input type="checkbox"> €100-€500<br><br>
+                <input name="price50" type="checkbox"> €0-€50<br>
+                <input name="price100" type="checkbox"> €50-€100<br>
+                <input name="price500"type="checkbox"> €100-€500<br><br>
 
                 <h4>Merk</h4>
-                <input type="checkbox"> Merk A<br>
-                <input type="checkbox"> Merk B<br>
-                <input type="checkbox"> Merk C<br><br>
+                <input name="merk a" type="checkbox"> Merk A<br>
+                <input name="merk b"type="checkbox"> Merk B<br>
+                <input name="merk c"type="checkbox"> Merk C<br><br>
 
                 <h4>Microcontroller</h4>
-                <input type="checkbox"> microbit<br>
-                <input type="checkbox"> arduino<br>
-                <input type="checkbox">  raspberrypi <br><br>
+                <input name="microbit" type="checkbox"> microbit<br>
+                <input name="arduino"type="checkbox"> arduino<br>
+                <input name="raspberrypi"type="checkbox">  raspberrypi <br><br>
             </form>
         </aside>
         
         <main>
-            <div>
+            <div class="fifty">
                 <img src="images/producten/product_1.jpg">
                 <h5>bord met copasior</h5>
                 <p>€ 19,99</p>
             </div>
-            <div>
+            <div class="fifty">
                 <img src="images/producten/product_2.jpg">
                 <h5>leuk bordtje met power</h5>
                 <p>€ 6,66</p>
             </div>
-            <div>
+            <div class="honderd">
                 <img src="images/producten/product_3.jpg">
                 <h5>plaatje met pootjes</h5>
                 <p>€ 69,69</p>
             </div>
-            <div>
+            <div class="honderd">
                 <img src="images/producten/product_4.jpg">
                 <h5>kleine power</h5>
                 <p>€ 100,00</p>
             </div>
-            <div>
+            <div class="vijfhonderd">
                 <img src="images/producten/product_5.jpg">
                 <h5>blauw dingen met dingentjes</h5>
                 <p>€ 420,00</p>
             </div>
-            <div>
+            <div class="vijfhonderd">
                 <img src="images/producten/product_6.jpg">
                 <h5>zwart bord met dingen er op</h5>
                 <p>€ 666,69</p>
             </div>
-            <div>
-                <img src="images/producten/product_7.jpg">
+            <div class="honderd">
+                <img  src="images/producten/product_7.jpg">
                 <h5>GROENNN</h5>
                 <p>€ 50,99</p>
             </div>
-            <div>
+            <div class="fifty">
                 <img src="images/producten/product_8.jpg">
                 <h5>bord met weerstand voor 10</h5>
                 <p>€ 29,99</p>
             </div>
-            <div>
+            <div class="vijfhonderd">
                 <img src="images/producten/product_6.jpg">
                 <h5>HEEL VEEL Dingen</h5>
                 <p>€ 10,00</p>
             </div>
-            <div>
+            <div class="honderd">
                 <img src="images/producten/product_1.jpg">
                 <h5>UTOTJE</h5>
                 <p>€ 100,00</p>
             </div>            
-            <div>
+            <div class="honderd">
                 <img src="images/producten/product_9.jpg">
                 <h5>grootbord</h5>
                 <p>€ 90,60</p>
             </div>  
-            <div>
+            <div class="fifty">
                 <img src="images/producten/product_7.jpg">
                 <h5>HET IS ME EINDELIJK GELUKT</h5>
                 <p>€ 12,00</p>
