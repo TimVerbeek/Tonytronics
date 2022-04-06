@@ -88,3 +88,23 @@ main div p
     color: black;
     font-weight: bolder;
 }
+
+footer div
+{
+    width:1903px;
+    background-color:lightblue;
+    display:flex;
+    align-content:space-around;
+    justify-content:space-around;
+}
+
+footer div ul
+{
+    padding:15px;
+}
+
+footer div ul li
+{
+    padding:15px;
+    list-style-type:none;
+}
